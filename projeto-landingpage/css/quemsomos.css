@@ -1,0 +1,236 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box
+}
+
+/* NAVEGAÇÃO */
+
+.header {
+    display: flex;
+    font-family: 'Mogra', cursive;
+    font-style: normal;
+}
+
+header, ul li {
+    list-style: none;
+    font-family: 'Averia Libre', cursive;
+    font-style: normal;
+    font-size: 1.1em;
+}
+
+body {
+    background-color: #ddd;
+    font: normal 20px/1.6 "Fira Sans", "Helvetica Neue", sans-serif;
+    background: #ddd;
+    color: #2E2D2D;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#background {
+    height: 64vh;
+    width: 100vw;
+}
+
+#logo {
+    height: 44vh;
+    width: 20vw;
+    position: absolute;
+    margin: 3%;
+}
+
+#tenis {
+    height: 78vh;
+    width: 36vw;
+    position: absolute;
+    bottom: 24%;
+    margin: 0 26%;
+}
+
+.header h2 {
+    height: 20vh;
+    width: 38vw;
+    font-size: 1.4em;
+    position: absolute;
+    margin: 12% 60%;
+}
+
+nav {
+    background: #2E2D2D;
+    height: 12%;
+    width: 100%;
+    float: none;
+    line-height: 80px;
+}
+
+.logo {
+    visibility: hidden;
+}
+
+nav ul {
+    float: right;
+    margin: 0 2%;
+}
+
+nav ul li {
+    display: inline-flex;
+    line-height: 40px;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 4px 16px;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+a.action, li a:hover {
+    background: #5C5B5B;
+    transition: 0.5s;
+    color: #A4ECD6;
+}
+
+nav li a {
+    color: #edf0f1;
+}
+
+.checkbtn {
+    font-size: 1.6em;
+    color: #A4ECD6;
+    float: right;
+    line-height: 8vw;
+    margin-right: 8%;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+p {
+    margin: ;
+    text-align: center;
+    color: #2E2D2D;
+    text-transform: initial;
+    font-size: 20px;
+    padding: 28px 20px 20px 20px;
+}
+
+@media (max-width: 981px) {
+    label.logo {
+        visibility: visible;
+        color: #A4ECD6;
+        font-size: 1.6em;
+        font-family: 'Mogra', cursive;
+        font-style: normal;
+        float: left;
+        padding: 0 20px;
+    }
+    #background, #logo, #tenis, .header h2 {
+        visibility: hidden;
+        position: fixed;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 858px) {
+    #background, #logo, #tenis, .header h2 {
+        visibility: hidden;
+        position: fixed;
+    }
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #2E2D2D;
+        top: 60px;
+        left: -102%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 1.2em;
+    }
+    li a:hover, a.action {
+        background: none;
+        color: #A4ECD6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+section p {
+    display: flex;
+    padding: 10%;
+    top: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #2E2D2D;
+    color: white;
+    height: 7%;
+    width: 100%;
+    line-height: 59px;
+}
+
+#pesquisa {
+    background-color: white;
+    border: solid 1px;
+    width: 200px;
+    height: 36px;
+    margin: 2px 8px 2px 8px;
+}
+
+#txtPesquisa {
+    float: left;
+    background-color: transparent;
+    padding: 8px 5px 5px 5px;
+    font-style: italic;
+    font-size: 14px;
+    width: 160px;
+}
+
+#pesquisa img {
+    height: 16px;
+    margin-bottom: 8px;
+    margin-left: 16px;
+}
+
+.redes img {
+    height: 24px;
+    margin: 30px 4px 4px 4px;
+}
